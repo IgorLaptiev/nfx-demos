@@ -1,0 +1,48 @@
+﻿#<laconf>
+    compiler
+    {
+    using { ns="System.Linq" }
+    using { ns="System.Collections.Generic" }
+    using { ns="Wave.UrlShortener.Models" }
+    using { ns="NFX" }
+    using { ns="NFX.Wave" }
+    using { ns="NFX.Wave.Templatization" }
+    base-class-name="Wave.UrlShortener.Pages.Master"
+    namespace="Wave.UrlShortener.Pages"
+    }
+#</laconf>
+#[class]
+
+  public IEnumerable<UrlRecord> Urls { get; set; }
+
+#[override renderBody()]
+<div>
+    <h1>Url shortener</h1>
+    <form class="block" action="/Home/AddUrl" method="POST">
+        <label>
+            Paste your long URL here:
+            <input name="url"/>
+        </label>
+        <button type="submit">Shorten URL</button>
+    </form>
+    <table class="url-table">
+        <thead>
+            <tr>
+                <th>Long Url</th>
+                <th>Created</th>
+                <th>Short Url</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @[foreach (var url in Urls){]
+            <tr>
+                <td><a href="?[url.OriginalUrl]">?[url.OriginalUrl]</a></td>
+                <td>?[url.CreateDate]</td>
+                <td><a href="?[url.ShortUrl]">?[url.ShortUrl]</a></td>
+            </tr>
+            @[}]
+        </tbody>
+    </table>
+</div>
+

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wave", "Wave", "{CF218F91-25FA-4C43-A3F2-9645F4CF8E3C}"
 EndProject
@@ -33,6 +33,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{25317679-8650-4147-B838-38C1708CC97B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaconicConfig", "Config\LaconicConfig.csproj", "{3DDC64BC-A2AC-4613-BF09-ACEA864E1656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave.UrlShortener", "Wave.UrlShortener\Wave.UrlShortener.csproj", "{508E1404-0385-477B-A116-1814FD4E68BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +86,10 @@ Global
 		{3DDC64BC-A2AC-4613-BF09-ACEA864E1656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DDC64BC-A2AC-4613-BF09-ACEA864E1656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DDC64BC-A2AC-4613-BF09-ACEA864E1656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508E1404-0385-477B-A116-1814FD4E68BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508E1404-0385-477B-A116-1814FD4E68BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508E1404-0385-477B-A116-1814FD4E68BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508E1404-0385-477B-A116-1814FD4E68BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,5 +106,6 @@ Global
 		{699399A0-C82B-4E99-9E56-4F41FA307EAD} = {A4F21793-16F9-42FA-BE66-ED88BC9D7C76}
 		{51EE0B45-5E00-4A68-978E-3AC0F00A99B7} = {A4F21793-16F9-42FA-BE66-ED88BC9D7C76}
 		{3DDC64BC-A2AC-4613-BF09-ACEA864E1656} = {25317679-8650-4147-B838-38C1708CC97B}
+		{508E1404-0385-477B-A116-1814FD4E68BD} = {CF218F91-25FA-4C43-A3F2-9645F4CF8E3C}
 	EndGlobalSection
 EndGlobal
